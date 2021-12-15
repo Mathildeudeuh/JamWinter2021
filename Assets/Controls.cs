@@ -15,7 +15,7 @@ public class @Controls : IInputActionCollection, IDisposable
     ""name"": ""Controls"",
     ""maps"": [
         {
-            ""name"": ""Player"",
+            ""name"": ""Player1"",
             ""id"": ""48ab8596-01f3-4561-99b6-f13a46bf9a4d"",
             ""actions"": [
                 {
@@ -107,10 +107,10 @@ public class @Controls : IInputActionCollection, IDisposable
     ],
     ""controlSchemes"": []
 }");
-        // Player
-        m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
-        m_Player_Selection = m_Player.FindAction("Selection", throwIfNotFound: true);
-        m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
+        // Player1
+        m_Player1 = asset.FindActionMap("Player1", throwIfNotFound: true);
+        m_Player1_Selection = m_Player1.FindAction("Selection", throwIfNotFound: true);
+        m_Player1_Move = m_Player1.FindAction("Move", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -157,34 +157,34 @@ public class @Controls : IInputActionCollection, IDisposable
         asset.Disable();
     }
 
-    // Player
-    private readonly InputActionMap m_Player;
-    private IPlayerActions m_PlayerActionsCallbackInterface;
-    private readonly InputAction m_Player_Selection;
-    private readonly InputAction m_Player_Move;
-    public struct PlayerActions
+    // Player1
+    private readonly InputActionMap m_Player1;
+    private IPlayer1Actions m_Player1ActionsCallbackInterface;
+    private readonly InputAction m_Player1_Selection;
+    private readonly InputAction m_Player1_Move;
+    public struct Player1Actions
     {
         private @Controls m_Wrapper;
-        public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Selection => m_Wrapper.m_Player_Selection;
-        public InputAction @Move => m_Wrapper.m_Player_Move;
-        public InputActionMap Get() { return m_Wrapper.m_Player; }
+        public Player1Actions(@Controls wrapper) { m_Wrapper = wrapper; }
+        public InputAction @Selection => m_Wrapper.m_Player1_Selection;
+        public InputAction @Move => m_Wrapper.m_Player1_Move;
+        public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
         public bool enabled => Get().enabled;
-        public static implicit operator InputActionMap(PlayerActions set) { return set.Get(); }
-        public void SetCallbacks(IPlayerActions instance)
+        public static implicit operator InputActionMap(Player1Actions set) { return set.Get(); }
+        public void SetCallbacks(IPlayer1Actions instance)
         {
-            if (m_Wrapper.m_PlayerActionsCallbackInterface != null)
+            if (m_Wrapper.m_Player1ActionsCallbackInterface != null)
             {
-                @Selection.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelection;
-                @Selection.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelection;
-                @Selection.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSelection;
-                @Move.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
-                @Move.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMove;
+                @Selection.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelection;
+                @Selection.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelection;
+                @Selection.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelection;
+                @Move.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMove;
             }
-            m_Wrapper.m_PlayerActionsCallbackInterface = instance;
+            m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
             {
                 @Selection.started += instance.OnSelection;
@@ -196,8 +196,8 @@ public class @Controls : IInputActionCollection, IDisposable
             }
         }
     }
-    public PlayerActions @Player => new PlayerActions(this);
-    public interface IPlayerActions
+    public Player1Actions @Player1 => new Player1Actions(this);
+    public interface IPlayer1Actions
     {
         void OnSelection(InputAction.CallbackContext context);
         void OnMove(InputAction.CallbackContext context);
