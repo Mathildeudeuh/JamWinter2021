@@ -19,8 +19,6 @@ public class SelectGood : MonoBehaviour
                 // La prochaine scène s'actiuve
                 sceneToOpenGood.SetActive(true);
                 // Le booléen redevient faux
-                Debug.Log("c bon");
-                // Si le booléen "isSelected" est vrai
             }
         }
     }
