@@ -224,7 +224,7 @@ RectTransform:
   - {fileID: 2110956667}
   - {fileID: 1107999674}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 115077042}
+      - m_Target: {fileID: 1879519357}
         m_TargetAssemblyTypeName: Loading, Assembly-CSharp
         m_MethodName: LoadSceneAsync
         m_Mode: 1
@@ -1855,7 +1855,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 544, y: -292}
+  m_AnchoredPosition: {x: 458, y: -241}
   m_SizeDelta: {x: 125.557, y: 25.245}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1047068071
@@ -2645,7 +2645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372949787
 GameObject:
@@ -2748,7 +2748,7 @@ RectTransform:
   - {fileID: 537224890}
   - {fileID: 799206924}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3561,6 +3561,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1879519356}
   - component: {fileID: 1879519355}
+  - component: {fileID: 1879519357}
   m_Layer: 0
   m_Name: ScriptsHolder
   m_TagString: Untagged
@@ -3592,8 +3593,22 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1879519357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879519354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274dc92fb8d79e243b42f7d139122e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneName: Game1
+  sceneToLoad: {fileID: 2184441457009194688, guid: 0b5b79cecc833504985b68da5ee2b48b, type: 3}
 --- !u!1 &1951223952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4578,5 +4593,5 @@ Transform:
   m_Children:
   - {fileID: 2017732332}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
