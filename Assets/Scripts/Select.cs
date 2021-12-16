@@ -34,4 +34,9 @@ public class Select : MonoBehaviour
             isSelected = true;
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isSelected = false;
+    }
 }
