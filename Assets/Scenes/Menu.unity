@@ -219,10 +219,10 @@ RectTransform:
   - {fileID: 2083039743}
   - {fileID: 1740567409}
   - {fileID: 1995542626}
-  - {fileID: 1107999674}
   - {fileID: 1958948691}
   - {fileID: 1512261703}
   - {fileID: 2110956667}
+  - {fileID: 1107999674}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1902,7 +1902,7 @@ RectTransform:
   m_Children:
   - {fileID: 570154677}
   m_Father: {fileID: 110389883}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2762,7 +2762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -291, y: -144}
+  m_AnchoredPosition: {x: -147, y: -142}
   m_SizeDelta: {x: 240.393, y: 147.707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1450216102
@@ -2815,7 +2815,7 @@ GameObject:
   - component: {fileID: 1512261705}
   - component: {fileID: 1512261704}
   m_Layer: 5
-  m_Name: Image
+  m_Name: logo melies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2833,7 +2833,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 110389883}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2969,7 +2969,7 @@ GameObject:
   - component: {fileID: 1740567411}
   - component: {fileID: 1740567410}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: moves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2991,7 +2991,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237, y: -34.1}
+  m_AnchoredPosition: {x: -109, y: -33}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740567410
@@ -3047,7 +3047,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 5
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -3579,7 +3579,7 @@ GameObject:
   - component: {fileID: 1951223955}
   - component: {fileID: 1951223954}
   m_Layer: 5
-  m_Name: Image
+  m_Name: fond
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3672,7 +3672,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 110389883}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3922,7 +3922,7 @@ GameObject:
   - component: {fileID: 1995542628}
   - component: {fileID: 1995542627}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: select
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3944,7 +3944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 437, y: -35.2}
+  m_AnchoredPosition: {x: 277, y: -28}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1995542627
@@ -4000,7 +4000,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 5
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -4317,7 +4317,7 @@ GameObject:
   - component: {fileID: 2083039745}
   - component: {fileID: 2083039744}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: rules texte
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4451,7 +4451,7 @@ GameObject:
   - component: {fileID: 2110956667}
   - component: {fileID: 2110956668}
   m_Layer: 0
-  m_Name: Sans titre-1.png BON
+  m_Name: space
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4465,11 +4465,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110956666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 346.92752, y: -130.25856, z: -494.15408}
+  m_LocalPosition: {x: 237, y: -130.25856, z: -494.15408}
   m_LocalScale: {x: 5.490601, y: 5.490601, z: 5.490601}
   m_Children: []
   m_Father: {fileID: 110389883}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2110956668
 SpriteRenderer:
