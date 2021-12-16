@@ -7,6 +7,12 @@ public class SelectFalse : MonoBehaviour
     [SerializeField] GameObject sceneToCloseFalse;
     [SerializeField] GameObject sceneToOpenFalse;
 
+
+    private void Awake()
+    {
+        isSelectedFalse = false;
+    } 
+
     public void SelectionFalse(InputAction.CallbackContext obj)
     {
         // Et si on appuie sur le bouton
