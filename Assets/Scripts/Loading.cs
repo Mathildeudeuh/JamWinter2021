@@ -8,7 +8,7 @@ public class Loading : MonoBehaviour
 {
     [SerializeField] private string SceneName;
     [SerializeField] private GameObject sceneToLoad;
-    [SerializeField] private GameObject CanvasMenu;
+    //[SerializeField] private GameObject CanvasMenu;
 
     public void LoadSceneAsync()
     {
@@ -18,7 +18,7 @@ public class Loading : MonoBehaviour
     IEnumerator LoadScreenCoroutine()
     {
         var ecran = Instantiate(sceneToLoad);
-        CanvasMenu.SetActive(false);
+        //CanvasMenu.SetActive(false);
         DontDestroyOnLoad(ecran);
 
         var chargement = SceneManager.LoadSceneAsync(SceneName);
