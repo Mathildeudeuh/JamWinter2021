@@ -1,18 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SelectFalse : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private bool isSelectedFalse = false;
+    [SerializeField] GameObject sceneToCloseFalse;
+    [SerializeField] GameObject sceneToOpenFalse;
+
+    public void SelectionFalse(InputAction.CallbackContext obj)
     {
-        
+        // Et si on appuie sur le bouton
+        if (!obj.performed)
+        {
+            if (isSelectedFalse == true)
+            {
+                // La scène actuelle se désactive
+                sceneToCloseFalse.SetActive(false);
+                // La prochaine scène s'actiuve
+                sceneToOpenFalse.SetActive(true);
+                // Le booléen redevient faux
+                Debug.Log("c bon");
+                // Si le booléen "isSelected" est vrai
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        // Si On entre en collision avec l'objet qui porte le tag "objectToFind"
+        if (collision.tag.Equals("wrongObject"))
+        {
+            // Le booléen "isSelected" devient vrai
+            isSelectedFalse = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        isSelectedFalse = false;
     }
 }
