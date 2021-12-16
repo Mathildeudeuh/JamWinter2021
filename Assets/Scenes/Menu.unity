@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: Game1
-  sceneToLoad: {fileID: 5889299576852741187, guid: 6aa05669d9b4d8441bf53bac09b5e9e1, type: 3}
+  sceneToLoad: {fileID: 5182554236075607044, guid: 75f52f098e381574ba812f4eeb5c7733, type: 3}
 --- !u!1 &256619136
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,7 +1006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &498487681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3221,7 +3221,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1372949788
 MonoBehaviour:
   m_ObjectHideFlags: 0
