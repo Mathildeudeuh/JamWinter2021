@@ -6,6 +6,7 @@ TagManager:
   tags:
   - objectToFind
   - wrongObject
+  - Music
   layers:
   - Default
   - TransparentFX
@@ -45,4 +46,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1517471415
+    locked: 0
+  - name: ui
+    uniqueID: 3366839049
     locked: 0
