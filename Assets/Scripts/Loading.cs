@@ -30,7 +30,7 @@ public class Loading : MonoBehaviour
             {
                 chargement.allowSceneActivation = true;
                 //ecran.GetComponent<Animator>().SetTrigger("Disparition");
-                Destroy(ecran);
+                Destroy(ecran, 0.1f);
             }
 
             yield return new WaitForSeconds(4);
